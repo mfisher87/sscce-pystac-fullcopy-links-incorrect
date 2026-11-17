@@ -1,5 +1,11 @@
 # [SSCCE](https://sscce.org) of pystac `Catalog.full_copy()` dropping fields from `Link`s 
 
+This SSCCE creates a catalog with links containing `extra_fields`, writes it out, then
+copies that catalog, and writes out the result of the copy.
+
+The copy differs from the original.
+
+
 ## Usage
 
 ```bash
